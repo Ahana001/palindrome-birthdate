@@ -174,7 +174,7 @@ function nextDate(date) {
 
 function getNextPalindromeDate(dateObj) {
     if (checkPalindromeForAllFormat(dateObj)) {
-        outputBox.innerText = "Your birthdate is palindrome!!"
+        message = "Your birthdate is palindrome!!"
     } else {
         let futureDate = nextDate(dateObj);
         let count = 0;
@@ -186,7 +186,7 @@ function getNextPalindromeDate(dateObj) {
             futureDate = nextDate(futureDate);
         }
         console.log(futureDate);
-        message = `You have missed ${count} ${count ===1 ?"day":"days"} next palindrome date from your birthdate is day : ${futureDate.day}, month : ${futureDate.month }, year : ${futureDate.year}`;
+        message = `You have missed ${count} ${count === 1 ? "day" : "days"} next palindrome date from your birthdate is day : ${futureDate.day}, month : ${futureDate.month}, year : ${futureDate.year}`;
     }
 }
 // console.log(getNextPalindromeDate({
@@ -254,7 +254,7 @@ function decreaseDate(date) {
 
 function getPastPalindromeDate(dateObj) {
     if (checkPalindromeForAllFormat(dateObj)) {
-        outputBox.innerText = "Your birthdate is palindrome!!"
+        message = "Your birthdate is palindrome!!"
     } else {
         let pastDate = decreaseDate(dateObj);
         let count = 0;
@@ -266,7 +266,7 @@ function getPastPalindromeDate(dateObj) {
             pastDate = decreaseDate(pastDate);
         }
         console.log(pastDate);
-        message = message + ` And You have missed ${count} ${count ===1 ?"day":"days"} in past palindrome date from your birthdate is day : ${pastDate.day}, month : ${pastDate.month }, year : ${pastDate.year}`;
+        message = message + ` And You have missed ${count} ${count === 1 ? "day" : "days"} in past palindrome date from your birthdate is day : ${pastDate.day}, month : ${pastDate.month}, year : ${pastDate.year}`;
     }
 }
 
