@@ -7,3 +7,10 @@ HTML
 CSS
 
 Vanilla JS.
+
+# Features
+Use a ternary operator to decide whether 'day' or 'days' should be printed.
+
+Use CSS to style background, cakes, and balloon images for a more attractive look.
+
+Use setTimeout() to create artificial delay and show "Processing..."  gif to make your user experience even better
