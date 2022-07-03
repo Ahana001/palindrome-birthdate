@@ -5,7 +5,9 @@ html {
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
 }
-
+.container h1 {
+    text-align: center;
+}
 .container {
     max-width: 1024px;
     margin: auto;
