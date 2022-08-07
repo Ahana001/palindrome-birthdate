@@ -186,7 +186,7 @@ function getNextPalindromeDate(dateObj) {
             futureDate = nextDate(futureDate);
         }
         console.log(futureDate);
-        message = `You have missed ${count} ${count === 1 ? "day" : "days"} next palindrome date from your birthdate is day : ${futureDate.day}, month : ${futureDate.month}, year : ${futureDate.year}`;
+        message = `You have missed ${count} ${count === 1 ? "day" : "days"} next palindrome date from your birthdate is day : ${futureDate.day}, month : ${futureDate.month}, year : ${futureDate.year}\n`;
     }
 }
 // console.log(getNextPalindromeDate({
@@ -266,7 +266,7 @@ function getPastPalindromeDate(dateObj) {
             pastDate = decreaseDate(pastDate);
         }
         console.log(pastDate);
-        message = message + ` And You have missed ${count} ${count === 1 ? "day" : "days"} in past palindrome date from your birthdate is day : ${pastDate.day}, month : ${pastDate.month}, year : ${pastDate.year}`;
+        message = message + ` And You have missed ${count} ${count === 1 ? "day" : "days"} in past palindrome date from your birthdate is day : ${pastDate.day}, month : ${pastDate.month}, year : ${pastDate.year}\n`;
     }
 }
 
